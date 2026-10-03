@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <tile>MY Game Profile</tile>
+    <tyle>
+        body {
+            font-family: Arial, sans-serif;
+            background:  aliceblue;
+            text-align: center;
+            padding: 30px;
+
+        }
+        h1 (color: navy;)
+        button {
+            bacgkround: navy;
+            color: white;
+            padding: 10px 25px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+        }
+        div {
+            border: 1px solid navy;
+            width: 280px;
+            margin: 6px auto;
+            padding: 8px 12px;
+            text-align: left;
+            border-radius: 6px;
+
+
+        }
+    </tyle>
+</head>
+<body>
+
+<h1>My Game Profile</h1>
+    <buttononclick="showProfile()">Show Profile</buttononclick>
+    
+    <div>Name: <span id="name"></span></div>
+     <div>Score: <span id="Score"></span></div>
+      <div>Top Score:  <span id="record"></span></div>
+       <div>Rank: <span id="rank"></span></div>
+        <div>Greeting: <span id="greeting"></span></div>
+         <div>Stars: <span id="stars"></span></div>
+          <div>Bonus Level: <span id="bonus"></span></div>
+           <div>Team Name: <span id="team"></span></div>
+           
+
+           <script>
+           function showProfile () {
+            
+           // Variables
+           let name = "Alex";
+           let myscore = 75;
+           let highscroe = 100;
+           let bonus = null;
+           let team;
+
+           // Comparisn Operator 
+           let isTopScore = myScore  == highScroe;
+
+           // if / else - Rank
+           let rank;
+           if (myScore >= 60)  {
+            rank= "Gold"; 
+           } else if (myScore >=50)  {
+            rank="Sliver";
+           } else {
+            rank="Bronze";
+           }
+           
+
+        }
+
+        // Date Object - Greeting
+        let hour = new data().getHouse();
+        let greeting;
+        if (hour < 12); {         
+          greeting ="Good Morning!";
+        } else if  (hour < 17) {
+            greeting = "Good Afternoon!";
+        } else {
+            gerrting ="Good Evening!";
+        }
+
+
+// While Loop - stars 
+let stars ="";
+let count =0;
+while (count < 5) {
+    stars=stars + "*";
+    count=count + 1 ;
+
+}
+
+// String Concatension - Show on Page
+document.getElementId("name").innerHTML   =name;
+ document.getElementId("Score").innerHTML =myScore + "" + highScore;
+ document.getElementId("record").innerHTML =isTopScore;
+ document.getElementId("rank").innerHTML   =rank;
+ document.getElementId("gerrting").innerHTML =greeting;
+ document.getElementId("stars").innerHTML =stars;
+ document.getElementId("bonus").innerHTML  =bouns;
+ document.getElementId("team").innerHTML =team;
+ 
+
+  </script>
+</body>
+</html>
+    
+
